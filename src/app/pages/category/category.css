@@ -1,0 +1,121 @@
+.category-page {
+  display: flex;
+  max-width: 1300px;
+  margin: 40px auto;
+  gap: 30px;
+}
+
+/* LEFT FILTER */
+.filter-box {
+  width: 260px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+}
+
+.filter-box h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.filter-section {
+  margin-bottom: 25px;
+}
+
+.filter-section label {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.c {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.sizes button,
+.dress-style button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sizes,
+.dress-style {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.apply-btn {
+  width: 100%;
+  background: #000;
+  color: white;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product-box {
+  flex: 1;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.category-header h2 {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.page {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.page.active {
+  background: #000;
+  color: white;
+}
+
+.prev,
+.next {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}

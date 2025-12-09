@@ -1,0 +1,29 @@
+<div class="top-banner">
+  Sign up and get 20% off to your first order.
+  <a href="#">Sign Up Now</a>
+</div> 
+<header class="header">
+  <div class="logo">SHOP.CO</div>
+     <nav class="nav">
+    <div class="dropdown">
+      <span class="dropdown-label">Shop ▼</span>
+      <div class="dropdown-menu">
+        <a *ngFor = "let c of categories" (click)="goToCategory(c.id)">
+          {{c.name}}
+        </a>
+      </div>
+    </div>
+    <a href="#">On Sale</a>
+    <a href="/product">New Arrivals</a>
+    <a href="#">Brands</a>
+  </nav>
+
+  <div class="search">
+    <input type="text" placeholder="Search for products..." [(ngModel)] = "keyword" (keyup.enter) = "onSearch()" />
+  </div>
+
+  <div class="icons">
+    <a href="/cart" class="icon">🛒</a>
+    <span class="icon">👤</span>
+  </div>
+</header>

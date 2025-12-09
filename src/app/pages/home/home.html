@@ -1,0 +1,121 @@
+<section class="hero">
+    <div class="hero-left">
+        <h1>
+            FIND CLOTHES<br>
+            THAT MATCHES<br>
+            YOUR STYLE
+        </h1>
+        <p>
+            We provide clothes that suits your style and which you're proud to wear.
+        </p>
+        <button class="shop-btn">Shop Now</button>
+
+        <div class="stats">
+        <div><b>200+</b><br>International Brands</div>
+        <div><b>2,000+</b><br>High-Quality Products</div>
+        <div><b>30,000+</b><br>Happy Customers</div>
+        </div>
+    </div>
+</section>
+
+<section class="brands">
+  <span>VERSACE</span>
+  <span>ZARA</span>
+  <span>GUCCI</span>
+  <span>PRADA</span>
+  <span>CALVIN KLEIN</span>
+</section>
+
+<section class="section-block">
+  <h2 class="section-title">NEW ARRIVALS</h2>
+
+  <div class="product-grid">
+    <app-product-card *ngFor = "let p of newArrivals" [product]="p">
+      
+    </app-product-card>
+  </div>
+
+  <div class="btn-wrapper">
+    <button class="view-all-btn">View All</button>
+  </div>
+</section>
+
+<section class="section-block">
+  <h2 class="section-title">TOP SELLING</h2>
+
+  <div class="product-grid">
+    <app-product-card *ngFor = "let p of topSelling" [product]="p">
+      
+    </app-product-card>
+  </div>
+
+  <div class="btn-wrapper">
+    <button class="view-all-btn">View All</button>
+  </div>
+</section>
+
+<div class="dress-container">
+  <h2 class="dress-title">BROWSE BY DRESS STYLE</h2>
+
+  <div class="dress-grid">
+
+    <div class="dress-item">
+      <img src="https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2021/08/1.jpg" alt="Casual">
+      <div class="dress-label">Casual</div>
+    </div>
+
+    <div class="dress-item">
+      <img src="https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2021/08/1.jpg" alt="Formal">
+      <div class="dress-label">Formal</div>
+    </div>
+
+    <div class="dress-item">
+      <img src="https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2021/08/1.jpg" alt="Party">
+      <div class="dress-label">Party</div>
+    </div>
+
+    <div class="dress-item">
+      <img src="https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2021/08/1.jpg" alt="Gym">
+      <div class="dress-label">Gym</div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<section class="home-reviews">
+  <h2 class="section-title">OUR HAPPY CUSTOMERS</h2>
+
+  <div class="reviews-grid">
+
+    <app-review-card
+      name="Sarah M."
+      text="I’m blown away by the quality and style of the clothes I received from Shop.co..."
+      date="August 14, 2023">
+    </app-review-card>
+
+    <app-review-card
+      name="Alex K."
+      text="Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co..."
+      date="August 15, 2023">
+    </app-review-card>
+
+    <app-review-card
+      name="James L."
+      text="As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co..."
+      date="August 16, 2023">
+    </app-review-card>
+
+  </div>
+</section>
+<div class="newsletter">
+  <div>
+    <h2>STAY UPTO DATE ABOUT<br>OUR LATEST OFFERS</h2>
+  </div>
+
+  <div class="newsletter-form">
+    <input type="text" placeholder="Enter your email">
+    <button>Subscribe</button>
+  </div>
+</div>

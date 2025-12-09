@@ -1,0 +1,14 @@
+<h2>Thêm Sản Phẩm</h2>
+<form [formGroup]="productFrm" (ngSubmit)="handleSubmit()">
+  <input type="text" placeholder="Tên sản phẩm"  formControlName="name"><br>
+  <input type="text" placeholder="Hình ảnh" formControlName="image"><br>
+  <input type="number" placeholder="Giá" formControlName="price"><br>
+
+  <select formControlName="categoryId">
+    <option *ngFor="let c of categories" [value] = "c.id">
+      {{c.name}}
+    </option>
+  </select>
+  <br>
+  <button type="submit">Thêm</button>
+</form>

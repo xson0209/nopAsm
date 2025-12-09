@@ -1,0 +1,16 @@
+<div class="card" [routerLink] = "['/product', product.id]"> 
+    <div class="img-box placeholder">
+        <div class="img-box">
+            <img [src]="product.image"  alt="">
+        </div>
+    </div>
+        <h4 class="title">{{product.name}}</h4>
+        <div class="rating">
+    ⭐ <span>{{product.rating }}</span> <small>(245)</small>
+        <div class="price">
+    <span class="new">{{product.price}}</span>
+    <span class="old">$200</span>
+    <span class="discount">-40%</span>
+    <button [routerLink]="['/product', product.id]">View Detail</button>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+<div class="category-page">
+
+  <div class="filter-box">
+
+    <h3>Filters</h3>
+
+    <div class="filter-section">
+      <label>Price</label>
+      <input type="range" min="0" max="500" value="150" />
+      <div class="range-values">
+        <span>$0</span>
+        <span>$500</span>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <label>Colors</label>
+      <div class="colors">
+        <span class="c" style="background:#FF5733;"></span>
+        <span class="c" style="background:#2b2bff;"></span>
+        <span class="c" style="background:#00b894;"></span>
+        <span class="c" style="background:#000;"></span>
+        <span class="c" style="background:#f1c40f;"></span>
+        <span class="c" style="background:#e84393;"></span>
+      </div>
+    </div>
+    <div class="filter-section">
+      <label>Size</label>
+      <div class="sizes">
+        <button>XS</button>
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <label>Dress Style</label>
+      <div class="dress-style">
+        <button>Casual</button>
+        <button>Formal</button>
+        <button>Party</button>
+        <button>Gym</button>
+      </div>
+    </div>
+
+    <button class="apply-btn">Apply Filter</button>
+  </div>
+
+  <div class="product-box">
+
+    <div class="category-header">
+      <h2>{{categoryName }}</h2>
+      <span>Showing {{ products.length }} products Sort by: Most Popular</span>
+    </div>
+
+    <div class="product-grid">
+      <app-product-card
+        *ngFor = "let p of products" [product] = "p"
+      >
+
+      </app-product-card>
+    </div>
+
+     <div class="pagination">
+      <button class="prev">‹ Previous</button>
+      <button class="page active">1</button>
+      <button class="page">2</button>
+      <button class="page">3</button>
+      <button class="page">4</button>
+      <button class="page">5</button>
+      <button class="next">Next ›</button>
+    </div>
+
+  </div>
+</div>

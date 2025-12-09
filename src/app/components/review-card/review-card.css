@@ -1,0 +1,18 @@
+.review-box {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.stars {
+  color: #ffc107;
+  margin-bottom: 5px;
+}
+
+.date {
+  color: #888;
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}

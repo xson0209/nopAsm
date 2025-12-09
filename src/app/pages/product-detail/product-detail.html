@@ -1,0 +1,121 @@
+<div *ngIf="product as p">
+
+  <div class="breadcrumb">Home > Shop > {{ p.name }}</div>
+  <div class="breadcrumb">
+    <h2>{{ p.name }}</h2>
+  </div>
+
+  <div class="product-detail">
+
+      <div class="left">
+        <div class="thumb-column">
+          <img [src]="p.image">
+          <img [src]="p.image">
+          <img [src]="p.image">
+          <img [src]="p.image">
+        </div>
+
+        <div class="main-img-box">
+          <img class="main-img" [src]="p.image">
+        </div>
+      </div>
+
+      <div class="right">
+        <h1>{{ p.name }}</h1>
+
+        <div class="rating">⭐⭐⭐⭐⭐ <span>{{ p.rating }} (245)</span></div>
+
+        <div class="price">
+          <strong>${{ p.price }}</strong>
+          <span class="old">$300</span>
+          <span class="sale">-40%</span>
+        </div>
+
+        <p class="desc">
+          This premium T-shirt offers excellent comfort and high-quality material.
+        </p>
+
+        <h4>Choose Color</h4>
+        <div class="colors">
+          <span class="clr c1"></span>
+          <span class="clr c2"></span>
+          <span class="clr c3"></span>
+        </div>
+
+        <h4>Choose Size</h4>
+        <div class="sizes">
+          <button>S</button>
+          <button class="active">M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+
+        <div class="actions">
+          <div class="qty">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+
+          <button class="add-cart">Add To Cart</button>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="tabs">
+    <button class="active">Product Details</button>
+    <button>Rating & Reviews</button>
+    <button>FAQ</button>
+  </div>
+
+  <div class="reviews">
+
+    <app-review-card
+      name="Samantha D."
+      text="I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable..."
+      date="August 14, 2023">
+    </app-review-card>
+
+    <app-review-card
+      name="Alex M."
+      text="The t-shirt exceeded my expectations! The colors are vibrant..."
+      date="August 15, 2023">
+    </app-review-card>
+
+    <app-review-card
+      name="Ethan R."
+      text="This t-shirt is a must-have for anyone who appreciates good design..."
+      date="August 16, 2023">
+    </app-review-card>
+
+    <app-review-card
+      name="Olivia P."
+      text="As a UI/UX enthusiast, I value simplicity and functionality..."
+      date="August 17, 2023">
+    </app-review-card>
+
+    <app-review-card
+      name="Liam K."
+      text="This t-shirt is a fusion of comfort and creativity..."
+      date="August 18, 2023">
+    </app-review-card>
+
+    <app-review-card
+      name="Ava H."
+      text="I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy..."
+      date="August 19, 2023">
+    </app-review-card>
+
+  </div>
+
+  <div class="product-suggest">
+    <app-product-card
+      *ngFor = "let p of suggestProducts"
+      [product] = "p"
+    >
+
+    </app-product-card>
+  </div>
+
+</div>

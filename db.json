@@ -1,0 +1,56 @@
+{
+  "categories": [
+    {
+      "name": "T-shirt-test",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Jeans"
+    },
+    {
+      "name": "Test Son",
+      "id": 3
+    },
+    {
+      "name": "sơn",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Áo thun trắng",
+      "price": 150,
+      "rating": 4.5,
+      "originalPrice": 200,
+      "discount": 25,
+      "image": "https://bizweb.dktcdn.net/100/415/697/products/nta101-wvs9s70f-1-97bx-hinh-mat-sau-0.jpg?v=1701332415287",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "name": "Áo thun đen",
+      "price": 180,
+      "rating": 4,
+      "image": "https://bizweb.dktcdn.net/100/415/697/products/nta101-wvs9s70f-1-97bx-hinh-mat-sau-0.jpg?v=1701332415287",
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "name": "Quần jeans xanh",
+      "price": 220,
+      "rating": 5,
+      "image": "https://bizweb.dktcdn.net/100/415/697/products/nta101-wvs9s70f-1-97bx-hinh-mat-sau-0.jpg?v=1701332415287",
+      "categoryId": 2
+    },
+    {
+      "name": "Test Validate1",
+      "image": "https://2885371169.e.cdneverest.net/catalog/product/3/t/3ts25s014-sr079-110-1-u.webp",
+      "price": 5,
+      "categoryId": 1,
+      "rating": 5,
+      "id": 4
+    }
+  ]
+}

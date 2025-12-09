@@ -1,0 +1,26 @@
+<a href="/admin/addcategorys">Thêm Danh Muc</a>
+<H2>Danh Sách Danh Mục</H2>
+<table border="1" width="100%" cellpadding="8">
+    
+    <thead>
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(c of categories; track c.id; let i = $index) {
+            <tr>
+                <td>{{i + 1}}</td>
+                <td>{{c.name}}</td>
+                <td>
+                    <button (click)='deleteCategory(c.id)'>Xóa</button>
+                    <a [routerLink]="['/admin/edit-category', c.id]">Sửa</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+<H2>Danh Sách Sản Phẩm</H2>
+<table border="1" width="100%" cellpadding="8">
+    <a href="/admin/addproducts">Thêm Sản Phẩm</a>
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Ảnh</th>
+            <th>Giá</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(p of products; track p.id; let i = $index) {
+            <tr>
+                <td>{{i + 1}}</td>
+                <td>{{p.name}}</td>
+                <td>
+                    <img [src] = "p.image" width="80" />
+                </td>
+                <td>{{p.price}}</td>
+                <td>
+                    <button (click)="deleteProduct(p.id)">Xóa</button>
+                    <a [routerLink]="['/admin/edit-product', p.id]">
+                        <button>Sửa</button>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
